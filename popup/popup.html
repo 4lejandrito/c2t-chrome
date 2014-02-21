@@ -1,16 +1,46 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
 
-<div class="container center-block">
-	<div id="car">
-		<h5 class="name"></h5>
-		<img class="img-thumbnail">
-		<h4><span id="price" class="label label-primary"></span></h4>
-	</div>
-	<div>
-	    <button class="btn btn-sm btn-success" id="button"><span class="glyphicon glyphicon-cloud-upload"> </span> Send to Trello!!</button>
-	</div>
-</div>
+<header>
+	Car to Trello
+</header>
+
+<section class="container center-block">
+	<article id="loading">
+		<div>
+			<h5 class="name">Loading...</h5>			
+		</div>	
+	</article>
+
+	<article id="car" class="hide">
+		<div>
+			<h5 class="name"></h5>
+			<img class="img-thumbnail">
+			<h4><span id="price" class="label label-primary"></span></h4>
+		</div>
+		<div>
+		    <button class="btn btn-sm btn-success" id="button">
+		    	<span class="glyphicon glyphicon-cloud-upload"> </span> Send to Trello!!
+		    </button>
+		</div>
+	</article>
+
+	<article id="error" class="hide">
+		<div id="car">
+			<h5>Sorry, this page is currently not suported</h5>
+			<p>
+				Currently we support
+				<a href="http://www.autotrader.co.uk">Autotrader</a>
+				and
+				<a href="http://www.gumtree.com">Gumtree</a>
+			</p>			
+		</div>	
+	</article>
+</section>
+
+<footer class="text-muted">	
+	With <span class="glyphicon glyphicon-heart"></span> by Alex
+</footer>
 
 <script type="text/javascript" src="../lib/jquery.js"></script>
 <script type="text/javascript" src="popup.js"></script>

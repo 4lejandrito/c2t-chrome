@@ -3,13 +3,30 @@ body {
 	text-align: center;
 	background-color: #F0F0F0;
 	border: 1px solid #b4b4b4;
+	width: 250px;
+	height: auto;
 }
 
-#car {
-	margin-bottom: 20px;
+header {	    
+	font-size: 20px;    
+    width: 90%;
+    margin: 0 auto 0 auto;    
+    border-bottom: 2px solid #dddddd;
+}
+
+footer {	    
+	font-size: 12px;    
+    width: 90%;
+    margin: 0 auto 0 auto;  
+    padding-top: 10px;  
+    border-top: 2px solid #dddddd;
 }
 
 img {
 	width: 200px;
 	max-width: 200px !important;
+}
+
+button {
+	margin: 10px auto 10px auto !important;	
 }
