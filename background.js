@@ -9,5 +9,7 @@ var oauth = ChromeExOAuth.initBackgroundPage({
 });
 
 oauth.authorize(function() {
-    console.log('COOL');
+    //chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
+        // do trello stuff        
+    //});
 });
