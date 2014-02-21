@@ -6,7 +6,8 @@
         "tabs",
         "https://trello.com/1/OAuthGetRequestToken",
         "https://trello.com/1/OAuthAuthorizeToken",
-        "https://trello.com/1/OAuthGetAccessToken"
+        "https://trello.com/1/OAuthGetAccessToken",
+        "https://api.trello.com/*"
     ],
     "web_accessible_resources": [
         "chrome_ex_oauth.html"
@@ -15,7 +16,7 @@
     "background": {
        "scripts": [
             "lib/chrome_ex_oauthsimple.js",
-            "lib/chrome_ex_oauth.js",
+            "lib/chrome_ex_oauth.js",            
             "background.js"
       ]
     },

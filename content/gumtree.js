@@ -1,4 +1,4 @@
- chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
     sendResponse({
         url: location.href,
         price: parseInt($('[itemprop="price"]').text().substring(1).replace(',', '')),
