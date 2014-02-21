@@ -1,0 +1,15 @@
+body {
+	padding: 5px 5px 15px 5px;
+	text-align: center;
+	background-color: #F0F0F0;
+	border: 1px solid #b4b4b4;
+}
+
+#car {
+	margin-bottom: 20px;
+}
+
+img {
+	width: 200px;
+	max-width: 200px !important;
+}
