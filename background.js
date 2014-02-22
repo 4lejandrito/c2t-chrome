@@ -30,9 +30,11 @@ oauth.authorize(function() {
             //idList: "530647ee12211349764d123c",
             name: car.name + ' (' + car.price + ')'
         }, function(card) {
-            trello.post('cards/' + card.id + '/actions/comments', {text: car.url});
-            trello.post('cards/' + card.id + '/attachments', {url: car.image});                    
-            chrome.tabs.update({ active: true });
+            trello.post('cards/' + card.id + '/actions/comments', {text: car.url}, function() {
+                trello.post('cards/' + card.id + '/attachments', {url: car.image}, function() {
+                    chrome.runtime.sendMessage();
+                });                    
+            });                        
         });        
     });
 });

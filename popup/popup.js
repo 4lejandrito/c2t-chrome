@@ -8,6 +8,9 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
             $('#button').click(function() {
                 $('#button').button('loading');
                 chrome.runtime.sendMessage(car);
+                chrome.runtime.onMessage.addListener(function() {
+                    window.close();
+                });
             });
             $('#car').removeClass('hide');
         } else {
