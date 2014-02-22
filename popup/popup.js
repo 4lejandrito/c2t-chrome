@@ -6,9 +6,8 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
             $('#car img').attr('src', car.image);
 
             $('#button').click(function() {
-                chrome.runtime.sendMessage(car, function() {
-                    window.close();
-                });
+                $('#button').button('loading');
+                chrome.runtime.sendMessage(car);
             });
             $('#car').removeClass('hide');
         } else {

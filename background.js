@@ -21,7 +21,7 @@ oauth.authorize(function() {
             }, { 'method': 'POST', 'parameters': params });    
         }
     };
-    
+
     chrome.runtime.onMessage.addListener(function(car, sender, sendResponse) {
         trello.post('cards', {
             idBoard: "530673663d96400f0b320497",
@@ -32,7 +32,7 @@ oauth.authorize(function() {
         }, function(card) {
             trello.post('cards/' + card.id + '/actions/comments', {text: car.url});
             trello.post('cards/' + card.id + '/attachments', {url: car.image});                    
-            sendResponse();
+            chrome.tabs.update({ active: true });
         });        
     });
 });
