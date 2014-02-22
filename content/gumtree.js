@@ -4,5 +4,5 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
         price: parseInt($('[itemprop="price"]').text().substring(1).replace(',', '')),
         name: $('[itemprop="name"]').text(),
         image: $('[itemprop="image"]').attr('content')
-    });
+    });    
 });
