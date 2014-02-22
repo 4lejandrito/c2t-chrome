@@ -24,10 +24,10 @@ oauth.authorize(function() {
 
     chrome.runtime.onMessage.addListener(function(car, sender, sendResponse) {
         trello.post('cards', {
-            idBoard: "530673663d96400f0b320497",
-            idList: "530673663d96400f0b320498",
-            //idBoard: "530647ee12211349764d123a",
-            //idList: "530647ee12211349764d123c",
+            //idBoard: "530673663d96400f0b320497",
+            //idList: "530673663d96400f0b320498",
+            idBoard: "530647ee12211349764d123a",
+            idList: "530647ee12211349764d123c",
             name: car.name + ' (' + car.price + ')'
         }, function(card) {
             trello.post('cards/' + card.id + '/actions/comments', {text: car.url}, function() {
