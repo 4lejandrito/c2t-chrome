@@ -2,9 +2,7 @@ body {
 	padding: 5px 5px 10px 5px;
 	text-align: center;
 	background-color: #F0F0F0;
-	border: 1px solid #b4b4b4;
-	width: 250px;
-	height: auto;
+	border: 1px solid #b4b4b4;	
 }
 
 header {	    
@@ -20,13 +18,4 @@ footer {
     margin: 0 auto 0 auto;  
     padding-top: 10px;  
     border-top: 2px solid #dddddd;
-}
-
-img {
-	width: 200px;
-	max-width: 200px !important;
-}
-
-button {
-	margin: 5px auto 10px auto !important;	
 }
