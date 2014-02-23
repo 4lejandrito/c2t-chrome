@@ -1,11 +1,11 @@
 <html>
 
     <head>
-        <title>Car to Trello for Chrome</title>
+        <title>Car to Trello for Chrome Options</title>
         <link rel="stylesheet" href="../css/reset.css">
-        <link rel="stylesheet" href="../css/bootstrap.css">        
+        <link rel="stylesheet" href="../css/bootstrap.css">
         <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="popup.css">
+        <link rel="stylesheet" href="options.css">
     </head>    
 
     <body>
@@ -22,20 +22,18 @@
                 </div>  
             </article>
 
-            <article id="car" class="hide">
-                <div>
-                    <h5 class="name"></h5>
-                    <img class="img-thumbnail">
-                    <h4><span id="price" class="label label-primary"></span></h4>
-                </div>
-                <div>
-                    <button class="btn btn-sm btn-success" id="button" data-loading-text="Sending...">
-                        <span class="fa fa-trello"> </span> Send to Trello
-                    </button>
+            <article id="createBoard" class="hide">
+                <div class="alert alert-success">
+                    <strong>Congratulations!!</strong> Car to Trello board was created for you.
                 </div>
             </article>
 
-            <article id="error" class="hide">
+            <article id="board" class="hide">
+                <a class="btn btn-primary btn-lg" target="_blank">
+                    <i class="fa fa-trello"> </i> Open Trello board</a>
+            </article>
+
+            <article id="error" class="hide well">
                 <div id="car">
                     <h5>Sorry, this page is currently not suported</h5>
                     <p>
@@ -47,16 +45,20 @@
                 </div>  
             </article>
 
-        </section>
-
+        </section> 
+        
         <footer class="text-muted"> 
             With <span class="glyphicon glyphicon-heart"></span> by Alex
         </footer>
 
         <script type="text/javascript" src="../lib/jquery.js"></script>
         <script type="text/javascript" src="../lib/bootstrap.min.js"></script>
-        <script type="text/javascript" src="popup.js"></script>
-        
+        <script type="text/javascript" src="../lib/chrome_ex_oauthsimple.js"></script>
+        <script type="text/javascript" src="../lib/chrome_ex_oauth.js"></script>
+        <script type="text/javascript" src="../lib/onload.js"></script>
+        <script type="text/javascript" src="../lib/trello.js"></script>
+        <script type="text/javascript" src="options.js"></script>
+
     </body>
 
 </html>

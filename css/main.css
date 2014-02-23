@@ -1,3 +1,5 @@
+@import url("../fonts/font-awesome-4.0.3/css/font-awesome.css");
+
 body {
 	padding: 5px 5px 10px 5px;	
 	background-color: #F0F0F0;
@@ -9,6 +11,11 @@ header {
     width: 90%;
     margin: 0 auto 0 auto;    
     border-bottom: 2px solid #dddddd;
+    text-align: center;
+}
+
+section {
+    text-align: center;
 }
 
 footer {	    
@@ -17,4 +24,5 @@ footer {
     margin: 0 auto 0 auto;  
     padding-top: 10px;  
     border-top: 2px solid #dddddd;
+    text-align: center;
 }

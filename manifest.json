@@ -18,6 +18,7 @@
        "scripts": [
             "lib/chrome_ex_oauthsimple.js",
             "lib/chrome_ex_oauth.js",            
+            "lib/trello.js",                       
             "background.js"
       ]
     },
