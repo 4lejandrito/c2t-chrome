@@ -1,15 +1,15 @@
 header {
-	margin-bottom: 20px;	
+    margin-bottom: 20px;    
 }
 
 #createBoard, #board {
-	margin: 0 auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 
 #createBoard {
-	display: inline-block;
+    display: inline-block;
 }
 
 footer {
-	margin-top: 20px;	
+    margin-top: 20px;   
 }

@@ -1,14 +1,14 @@
-body {	
-	width: 250px;
-	height: auto;
-	text-align: center;
+body {  
+    width: 250px;
+    height: auto;
+    text-align: center;
 }
 
 img {
-	width: 200px;
-	max-width: 200px !important;
+    width: 200px;
+    max-width: 200px !important;
 }
 
 button {
-	margin: 5px auto 10px auto !important;	
+    margin: 5px auto 10px auto !important;  
 }
