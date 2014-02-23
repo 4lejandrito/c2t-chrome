@@ -7,7 +7,8 @@
         "https://trello.com/1/OAuthGetRequestToken",
         "https://trello.com/1/OAuthAuthorizeToken",
         "https://trello.com/1/OAuthGetAccessToken",
-        "https://api.trello.com/*"
+        "https://api.trello.com/*",
+        "https://c2t.herokuapp.com/*"        
     ],
     "web_accessible_resources": [
         "chrome_ex_oauth.html"
@@ -18,7 +19,8 @@
        "scripts": [
             "lib/chrome_ex_oauthsimple.js",
             "lib/chrome_ex_oauth.js",            
-            "lib/trello.js",                       
+            "lib/trello.js",
+            "lib/jquery.js",                     
             "background.js"
       ]
     },
