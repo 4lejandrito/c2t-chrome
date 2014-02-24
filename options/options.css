@@ -1,15 +1,29 @@
-header {
-    margin-bottom: 20px;    
+body {    
+	width: 60%;
+	padding-bottom: 20px;	
 }
 
-#createBoard, #board {
-    margin: 0 auto 0 auto;
+@media (max-width:632px) {
+	body {    
+		width: 100%;	
+	}	
+}
+
+header {
+    margin-bottom: 20px;        
+    font-size: 30px;
+}
+
+article {
+	width: 80%;
+	margin: 0 auto 0 auto;
 }
 
 #createBoard {
-    display: inline-block;
+	width: 70%;
 }
 
-footer {
-    margin-top: 20px;   
+#board h4 {
+	margin-top: 0px;
+    margin-bottom: 25px;
 }

@@ -2,6 +2,13 @@ body {
     width: 250px;
     height: auto;
     text-align: center;
+    padding: 5px 5px 10px 5px;	
+	background-color: #F0F0F0;
+	border: 1px solid #b4b4b4;	
+}
+
+header, footer {
+	width: 90%;
 }
 
 img {

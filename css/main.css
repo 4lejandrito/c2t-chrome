@@ -1,14 +1,7 @@
 @import url("../fonts/font-awesome-4.0.3/css/font-awesome.css");
 
-body {
-	padding: 5px 5px 10px 5px;	
-	background-color: #F0F0F0;
-	border: 1px solid #b4b4b4;	
-}
-
 header {	    
-	font-size: 20px;    
-    width: 90%;
+	font-size: 20px;        
     margin: 0 auto 0 auto;    
     border-bottom: 2px solid #dddddd;
     text-align: center;
@@ -19,8 +12,7 @@ section {
 }
 
 footer {	    
-	font-size: 12px;    
-    width: 90%;
+	font-size: 12px;        
     margin: 0 auto 0 auto;  
     padding-top: 10px;  
     border-top: 2px solid #dddddd;
