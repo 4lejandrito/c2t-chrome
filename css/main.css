@@ -2,8 +2,7 @@
 
 header {	    
 	font-size: 20px;        
-    margin: 0 auto 0 auto;    
-    border-bottom: 2px solid #dddddd;
+    margin: 0 auto 0 auto;        
     text-align: center;
 }
 
@@ -13,8 +12,6 @@ section {
 
 footer {	    
 	font-size: 12px;        
-    margin: 0 auto 0 auto;  
-    padding-top: 10px;  
-    border-top: 2px solid #dddddd;
+    margin: 0 auto 0 auto;      
     text-align: center;
 }

@@ -7,15 +7,20 @@ body {
 	border: 1px solid #b4b4b4;	
 }
 
-header, footer {
-	width: 90%;
+h5 {
+    margin-top: 0px;
+}
+
+.well {
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 img {
-    width: 200px;
-    max-width: 200px !important;
+    width: 165px;
+    max-width: 165px !important;
 }
 
 button {
-    margin: 5px auto 10px auto !important;  
+    margin-top: 5px;  
 }
