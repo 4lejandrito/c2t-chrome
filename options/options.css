@@ -24,6 +24,9 @@ article {
 }
 
 #board h4 {
-	margin-top: 0px;
-    margin-bottom: 25px;
+	margin-top: 0px;    
+}
+
+#board a {
+	margin-top: 15px;
 }
