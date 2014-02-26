@@ -19,3 +19,8 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         $('#loading').addClass('hide');
     });
 });
+
+$('body').on('click', 'a', function() {
+    chrome.tabs.create({url: 'http://trello.com/b/' + new Trello().getData().board});
+    return false;
+});
