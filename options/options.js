@@ -1,6 +1,7 @@
-var data = new Trello().getData();
+var trello = new Trello();
+var data = trello.getData();
 
-$('#board').removeClass('hide').find('a').attr('href', 'https://trello.com/b/' + data.board);
+$('#board').removeClass('hide').find('a').attr('href', trello.getBoardURL());
 $('#loading').addClass('hide');
 
 if (!localStorage['installed']) {

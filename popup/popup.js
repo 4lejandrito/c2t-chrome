@@ -21,6 +21,6 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
 });
 
 $('body').on('click', 'a', function() {
-    chrome.tabs.create({url: 'http://trello.com/b/' + new Trello().getData().board});
+    chrome.tabs.create({url: new Trello().getBoardURL()});
     return false;
 });
