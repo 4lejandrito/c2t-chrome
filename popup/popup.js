@@ -6,7 +6,7 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
             $('#car img').attr('src', car.image);
 
             $('#button').click(function() {
-                $('#button').button('loading');
+                $(this).button('loading');
                 chrome.runtime.sendMessage(car);
                 chrome.runtime.onMessage.addListener(function() {
                     window.close();
